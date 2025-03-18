@@ -14,6 +14,7 @@
       text-align: center;
       position: relative;
       overflow: hidden;
+      font-family: 'Cute Font', sans-serif;
     }
 
     .x {
@@ -34,7 +35,6 @@
 
     /* Cute pink button */
     .cute-button {
-      font-family: "Cute Font";
       font-size: 5rem;
       background-color: pink;
       color: black;
@@ -54,14 +54,45 @@
       transform: scale(1.1);
       transform: scale(1.1) translateY(-5px);
     }
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 768px) {
+      .z {
+        font-size: 6rem; /* Smaller font size for tablets and mobile */
+      }
+
+      .cute-button {
+        font-size: 4rem; /* Smaller button on mobile */
+        padding: 10px 30px;
+      }
+
+      .x {
+        font-size: 50px; /* Smaller heading */
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .z {
+        font-size: 5rem; /* Even smaller font size for small screens */
+      }
+
+      .cute-button {
+        font-size: 3rem; /* Even smaller button on small mobile screens */
+        padding: 8px 25px;
+      }
+
+      .x {
+        font-size: 40px; /* Adjust heading for small screens */
+      }
+    }
   </style>
 </head>
 <body>
   <h2 class="z">Click the button to get your period</h2>
 
-    <!-- Cute Button -->
+  <!-- Cute Button -->
   <button class="cute-button" onclick="f()">💗</button>
- 
+
   <script>
     function f() {
       window.alert("Okieee:DD")
